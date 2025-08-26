@@ -25,6 +25,3 @@ This project demonstrates adding products to cart, viewing cart items, and check
 2. Open the project in a live server (e.g., VS Code Live Server extension) or host it via GitHub Pages.  
 3. Products will load dynamically from `products.json`.  
 
-## Demo  
-*(Add your GitHub Pages link here after deployment)*  
-
