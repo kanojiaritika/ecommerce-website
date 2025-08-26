@@ -2,26 +2,21 @@
 
 ## Live Demo Link : https://kanojiaritika.github.io/ecommerce-website/
 
-A simple responsive **E-commerce website** built with **HTML, CSS, Bootstrap, and JavaScript**.  
-This project demonstrates adding products to cart, viewing cart items, and checking out.  
+A simple responsive **E-commerce website** built with **HTML, CSS, Bootstrap and JavaScript**.  
+This project demonstrates viewing products, adding products to cart and viewing cart items.
 
 ## Features  
-- Responsive design with Bootstrap  
-- Product carousel on homepage  
-- Dynamic product listing (loaded from `products.json`)  
-- Add to Cart functionality with localStorage  
-- Cart page with quantity, subtotal, and total calculation  
-- Search bar for filtering products  
-- Toast notifications and product details modal  
+1. Responsive design with Bootstrap  
+2. Product carousel on homepage  
+3. Dynamic product listing (loaded from `products.json`)  
+4. Add to Cart functionality with localStorage  
+5. Cart page with quantity, subtotal, and total calculation  
+6. Search bar for filtering products  
+7. Toast notifications and product details modal  
 
 ## Tech Stack  
-- HTML5  
-- CSS3 (Bootstrap 5)  
-- JavaScript (jQuery)  
-- LocalStorage  
-
-## How to Run  
-1. Clone this repository.  
-2. Open the project in a live server (e.g., VS Code Live Server extension) or host it via GitHub Pages.  
-3. Products will load dynamically from `products.json`.  
+1. HTML5  
+2. CSS3 (Bootstrap 5)  
+3. JavaScript 
+4. LocalStorage
 
