@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecommerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid ms-auto">
+        <a class="navbar-brand" href="index.html">ECOMMERCE WEBSITE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cart-qty" href="cart.html">Cart 0</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/car4.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Get the Best Products</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/car5.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Amazing Deals on Android</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/car6.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cool Monitor Setup</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- <h2 class="text-center fw-bold mb-4 mt-5">Our Products</h2> -->
+    <!-- Search Bar -->
+    <!-- <div class="d-flex justify-content-center mb-5">
+      <div class="input-group w-50">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search products..."
+          id="search-input"
+        />
+        <button class="btn btn-primary" id="search-btn">Search</button>
+      </div>
+    </div> -->
+    <!-- ADDED THIS -->
+    <!-- Replace your product section with this -->
+    <h2 id="products" class="text-center fw-bold mb-4 mt-5">Our Products</h2>
+    <!-- Search Bar -->
+    <div class="d-flex justify-content-center mb-5">
+      <div class="input-group w-50">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search products..."
+          id="search-input"
+        />
+        <button class="btn btn-primary" id="search-btn">Search</button>
+      </div>
+    </div>
+    <!-- TILL HERE REMOVE IF NOT WORKING AND UNCOMMENT ITS ABOVE CODE -->
+    <!-- Product list container -->
+    <div class="container mt-5">
+      <div class="row" id="product-list">
+        <!-- Products will load here dynamically from products.json -->
+      </div>
+    </div>
+
+    <!-- HAD HARCODED THIS EARILER -->
+    <!-- <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img
+              src="images/laptop.jpg"
+              class="card-img-top"
+              alt="Product"
+              id="product-img"
+            />
+            <div class="card-body">
+              <h5 class="card-title" id="product-name">MacBook Laptop</h5>
+              <p class="card-text" id="product-price">Rs. 100000</p>
+              <a href="#" class="btn btn-primary add-to-cart-btn"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img src="images/iphone.webp" class="card-img-top" alt="Product" />
+            <div class="card-body">
+              <h5 class="card-title">IPhone 14</h5>
+              <p class="card-text">Rs. 85000</p>
+              <a href="#" class="btn btn-primary add-to-cart-btn"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img
+              src="images/headphones.webp"
+              class="card-img-top"
+              alt="Product"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Headphones</h5>
+              <p class="card-text">Rs. 30000</p>
+              <a href="#" class="btn btn-primary add-to-cart-btn"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img
+              src="images/powerbank.jpg"
+              class="card-img-top"
+              alt="Product"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Philips Powerbank</h5>
+              <p class="card-text">Rs. 5000</p>
+              <a href="#" class="btn btn-primary add-to-cart-btn"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- HARDCODED PART ENDS HERE -->
+
+    <!-- Toast Container (fixed on top right) -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div
+        id="cart-toast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body" id="toast-message">
+            ✅ Product added to cart!
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Product Name</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- dynamically filled by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</html>

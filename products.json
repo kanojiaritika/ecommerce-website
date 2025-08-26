@@ -1,0 +1,58 @@
+[
+  {
+    "id": "macbook",
+    "name": "MacBook Laptop",
+    "price": 100000,
+    "img": "images/laptop.jpg",
+    "description": "Powerful laptop with M1 chip."
+  },
+  {
+    "id": "iphone14",
+    "name": "iPhone 14",
+    "price": 85000,
+    "img": "images/iphone.webp",
+    "description": "Latest iPhone with A15 Bionic chip."
+  },
+  {
+    "id": "headphones",
+    "name": "Headphones",
+    "price": 5000,
+    "img": "images/headphones.webp",
+    "description": "Noise-cancelling wireless headphones."
+  },
+  {
+    "id": "powerbank",
+    "name": "Philips Powerbank",
+    "price": 2000,
+    "img": "images/powerbank.jpg",
+    "description": "10000mAh fast-charging powerbank."
+  },
+  {
+    "id": "wirelesscharger",
+    "name": "Gizmore Wireless Magnetic Charger",
+    "price": 10000,
+    "img": "images/wirelesscharger.jpg",
+    "description": "Powerful laptop with M1 chip."
+  },
+  {
+    "id": "tablet",
+    "name": "Lenovo Tablet",
+    "price": 8500,
+    "img": "images/tablet.webp",
+    "description": "Lenovo Tablet"
+  },
+  {
+    "id": "airpods",
+    "name": "Airpods Pro 2a generation",
+    "price": 2000,
+    "img": "images/airpods.jpeg",
+    "description": "Noise-cancelling wireless Airpods"
+  },
+  {
+    "id": "monitor",
+    "name": "Lenovo Monitor",
+    "price": 5000,
+    "img": "images/monitor.jpg",
+    "description": "Amazing Monitor"
+  }
+]
